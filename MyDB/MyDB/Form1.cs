@@ -5,6 +5,9 @@ using System.Net; // Это система библиотеки Windows
 using System.Net.Mail;
 using System.Drawing;
 
+// ДЛЯ ТЕСТА РАБОТОСПОСОБНОСТИ МОЕЙ ПРОГРАММЫ (github: https://github.com/kayweba)
+// НЕОБХОДИМО УКАЗАТЬ СВОИ ПАРОЛЬ И ПОЧТУ В private void SendMessage - ПРЕДПОСЛЕДНИЙ МЕТОД В ЭТОМ ФАЙЛЕ.
+
 namespace LocalDB
 {
     public partial class Form1 : Form
@@ -148,8 +151,8 @@ namespace LocalDB
         {
             try
             {
-                string from = @"under4e98@mail.ru"; // Адрес отправителя
-                string pass = "andrew317"; // Пароль отправителя
+                string from = @""; // Адрес отправителя
+                string pass = ""; // Пароль отправителя
                 MailMessage mess = new MailMessage();
                 mess.To.Add(adressTo); // Адрес получателя
                 mess.From = new MailAddress(from);
